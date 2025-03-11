@@ -69,9 +69,13 @@ namespace Conditionals
                 case >= 60:
                     Console.WriteLine("D: Below Average");
                     break;
+                case < 0:
+                    Console.WriteLine("How?");
+                    break;
                 case <= 59:
                     Console.WriteLine("F: Fail");
                     break;
+
             }
         }
     }
