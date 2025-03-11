@@ -50,9 +50,11 @@ namespace Conditionals
             //writes a line saying largest is the largest number
             Console.WriteLine($"{largest} is the largest number");
 
-            //writes a line 
+            //writes a line transtioning from the previous situations to grade part of the project
             Console.WriteLine("Now let's try one last experiment, please input a number grade");
+            //declaring grade and assigning the inputted double to it
             double grade = Convert.ToDouble(Console.ReadLine());
+            // creates a switch based on grade that outputs a written line like "A: Superior" or "C:Average" depending on the value of grade
             switch (grade)
             {
                 case >= 90:
@@ -71,7 +73,6 @@ namespace Conditionals
                     Console.WriteLine("F: Fail");
                     break;
             }
-
         }
     }
 }
