@@ -14,25 +14,27 @@ namespace Conditionals
             bool posNeg = firstNum > 0;
             //if posNeg is true writes a line stating that firstNum is a postive number
             if (posNeg == true)
-            {
-                Console.WriteLine($"{firstNum} is postive");
-            }
-            //otherwise if posNeg is false it writes a line stating that firstNum is a negative number
+                 {
+                      Console.WriteLine($"{firstNum} is postive");
+                 }
+                 //otherwise if posNeg is false it writes a line stating that firstNum is a negative number
             else if (posNeg == false) 
-            {
-                Console.WriteLine($"{firstNum} is negative");
-            }
+                 {
+                     Console.WriteLine($"{firstNum} is negative");
+                 }
+
             //writes a line saying "and" to both seperate the two if-else sections and to connect them as effecting the same input
             Console.WriteLine("and");
             //detemines if firstNum is % 2 == 0 then write a statement saying its even, otherwise write a statement saying its odd
             if (firstNum % 2 == 0) 
-            {
-                Console.WriteLine($"{firstNum} is even");
-            }
+                 {
+                      Console.WriteLine($"{firstNum} is even");
+                 }
             else
-            { 
-                Console.WriteLine($"{firstNum} is odd");
-            }
+                 { 
+                      Console.WriteLine($"{firstNum} is odd");
+                 }
+
             //asks for a second whole number
             Console.WriteLine("Please enter a second whole number");
             //declares secNum and assigns the inputted number
@@ -47,6 +49,29 @@ namespace Conditionals
             int largest = Math.Max(firstNum, Math.Max(secNum, triNum));
             //writes a line saying largest is the largest number
             Console.WriteLine($"{largest} is the largest number");
+
+            //writes a line 
+            Console.WriteLine("Now let's try one last experiment, please input a number grade");
+            double grade = Convert.ToDouble(Console.ReadLine());
+            switch (grade)
+            {
+                case >= 90:
+                    Console.WriteLine("A: Superior");
+                    break;
+                case >= 80:
+                    Console.WriteLine("B: Very Good");
+                    break;
+                case >= 70:
+                    Console.WriteLine("C: Average");
+                    break; 
+                case >= 60:
+                    Console.WriteLine("D: Below Average");
+                    break;
+                case <= 59:
+                    Console.WriteLine("F: Fail");
+                    break;
+            }
+
         }
     }
 }
